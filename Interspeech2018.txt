@@ -1,0 +1,42 @@
+End-to-end models got a lot of attention for ASR applications. Training a single model and their low on-disk size has made them a preferred choice with a lot of researchers working in ASR.
+
+End-to-End Speech Recognition:
+1. Semi-Supervised End-to-End Speech Recognition
+2. Compression of End-to-End Models
+
+Speech Recognition for Indian Languages:
+1. Effect of TTS Generated Audio on OOV Detection and Word Error Rate in ASR for Low-resource Languages
+
+ASR Systems and Technologies:
+1. Cold Fusion: Training Seq2Seq Models Together with Language Models
+2. Subword and Crossword Units for CTC Acoustic Models
+3. Character-level Language Modeling with Gated Hierarchical Recurrent Neural Networks
+
+Deep Neural Networks: How Can We Interpret What They Learned?
+1. Information Encoding by Deep Neural Networks: What Can We Learn?
+2. State Gradients for RNN Memory Analysis
+3. Exploring How Phone Classification Neural Networks Learn Phonetic Information by Visualising and Interpreting Bottleneck Features
+4. Memory Time Span in LSTMs for Multi-Speaker Source Separation
+
+Recurrent Neural Models for ASR
+1. A GPU-based WFST Decoder with Exact Lattice Generation
+2. Automatic Speech Recognition System Development in the "Wild"
+3. Semantic Lattice Processing in Contextual Automatic Speech Recognition for Google Assistant
+4. Contextual Speech Recognition in End-to-end Neural Network Systems Using Beam Search
+
+Zero-resource Speech Recognition
+1. Multilingual Bottleneck Features for Subword Modeling in Zero-resource Languages
+2. Exploiting Speaker and Phonetic Diversity of Mismatched Language Resources for Unsupervised Subword Modeling
+
+Neural Network Training Strategies for ASR
+1. An Investigation of Mixup Training Strategies for Acoustic Models in ASR
+
+Low Resource Speech Recognition Challenge for Indian Languages
+1. BUT System for Low Resource Indian Language ASR
+
+Language Modeling
+1. Active Memory Networks for Language Modeling
+2. Unsupervised and Efficient Vocabulary Expansion for Recurrent Neural Network Language Models in ASR
+3. Improving Language Modeling with an Adversarial Critic for Automatic Speech Recognition
+4. Training Recurrent Neural Network through Moment Matching for NLP Applications
+5. i-Vectors in Language Modeling: An Efficient Way of Domain Adaptation for Feed-Forward Models
