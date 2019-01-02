@@ -1,0 +1,34 @@
+** Language Models **
+1. Numeracy for Language Models: Evaluating and Improving their Ability to Predict Numbers: http://aclweb.org/anthology/P18-1196
+This paper describes language models to predict numbers in text and provides an extensive quantitative and qualitative evaluation of results.
+
+2. Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates: http://aclweb.org/anthology/P18-1007
+This paper describes a subword regularization scheme for training an NMT system in the presence of multiple subword segmentations for the same sentences. It obtains remarkable improvements by just applying the subword regularization and can be further enhanced using out-of-domain data.
+
+3. Building Language Models for Text with Named Entities: http://aclweb.org/anthology/P18-1221
+This paper builds a specialized class-based LM out of LSTMs for NEs and uses it obtains impressive improvements over a standard LSTM in word-porediction tasks.
+
+** Resources **
+1. NLP Web Services for Resource-Scarce Languages: http://www.aclweb.org/anthology/P18-4008
+This paper introduces a web service to solve various NLP tasks on 11 South African languages.
+
+** Word Embeddings **
+1. Two Methods for Domain Adaptation of Bilingual Tasks: Delightfully Simple and Broadly Applicable: http://www.aclweb.org/anthology/P18-1075
+This paper describes two methods to dapt BWEs for bilgual tasks. First approach concatenates out-of-domain and in-domain data together to produce embeddings and then create BWEs out of these. Second approach utilizes more unlabled to improve the performance of BWEs.
+
+** Including External Knowledge **
+1. Neural Natural Language Inference Models Enhanced with External Knowledge: http://aclweb.org/anthology/P18-1224
+The paper asks an important regarding NLI:  there exist relatively large annotated data for NLI, can machines learn all  inference  knowledge  needed  to  perform  NLI from  the  data? If  not,  how  can  neural  network-based  NLI  models  benefit  from  external  knowledge and how to build NLI models to leverage it? This paper describes neural network architecture modifications to include domain knowledge available through WordNet and other such sources for NLI. Interestingly, at large amounts of data, the suggested modifications perform similarly to each other, however, for smaller amounts of data one is able to observe the difference among the modifications.
+
+2. Mem2Seq: Effectively Incorporating Knowledge Bases into End-to-End Task-Oriented Dialog Systems: http://aclweb.org/anthology/P18-1136
+This paper describes a combination of memory and pointer network to decode sequences for effectively using knowledge bases in a dialog system. Interesting fallout is the F1-score might be a more apprpriate metric than BLEU for dialog based tasks.
+
+** Miscellaneous **
+1. The Hitchhiker’s Guide to Testing Statistical Significance in Natural Language Processing: https://vimeo.com/285803636
+Succint description of which statistical test to use with which metric. For recommendations on your metrics refer to paper's appendix: https://arxiv.org/pdf/1809.01448.pdf
+
+2. Generating Informative Responses with Controlled Sentence Function: aclweb.org/anthology/P18-1139
+This paper describes a neural network architecture to generate interrogative, imperative or declarative responses by introducing a sentence function network to generate the responses. The overall architecture is well motivated to handke the various sub-problems encountered during NLG.
+
+3. Did the Model Understand the Question? https://vimeo.com/285804898
+The paper describes an interesting way of understanding a deep learning model. It utilizes an attribution-based workflow to interpret these model's decisions and in turn find their weaknesses. The paper finds that SOTA and near-SOTA QA models do not focus on right words and proposes attacks to improve upon prior work. 
