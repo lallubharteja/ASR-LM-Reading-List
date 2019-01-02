@@ -1,42 +1,79 @@
 End-to-end models got a lot of attention for ASR applications. Training a single model and their low on-disk size has made them a preferred choice with a lot of researchers working in ASR.
 
 End-to-End Speech Recognition:
-1. Semi-Supervised End-to-End Speech Recognition
-2. Compression of End-to-End Models
+1. Semi-Supervised End-to-End Speech Recognition: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1746.pdf
+Trains an End-to-End model using "unpaired" speech and text datasets and learns to extract features from unpaired speech and text in the same space.
+
+2. Compression of End-to-End Models: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1025.pdf
+Reviews different techniques to compress end-to-end models wrt device constraints.
 
 Speech Recognition for Indian Languages:
-1. Effect of TTS Generated Audio on OOV Detection and Word Error Rate in ASR for Low-resource Languages
+1. Effect of TTS Generated Audio on OOV Detection and Word Error Rate in ASR for Low-resource Languages: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1555.pdf
+Studies detecting OOVs and subsequently applying a cross-lingual TTS for OOV sound generation in low resource scenarios.
 
 ASR Systems and Technologies:
-1. Cold Fusion: Training Seq2Seq Models Together with Language Models
-2. Subword and Crossword Units for CTC Acoustic Models
-3. Character-level Language Modeling with Gated Hierarchical Recurrent Neural Networks
+1. Cold Fusion: Training Seq2Seq Models Together with Language Models: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1392.pdf
+Describes a way to fuse a pre-trained LM with an end-to-end model during training and experiment with this setup for domain adaptation.
+
+2. Subword and Crossword Units for CTC Acoustic Models: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/2057.pdf
+Uses BPE to create subword and cross-word acoustic models. These models are compared on Callhome and Swicthboard tasks. Character models perform better than subword models on OOVs.
+
+3. Character-level Language Modeling with Gated Hierarchical Recurrent Neural Networks: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1727.pdf
+Extends the Hierarchical RNNs with gating, which use words and characters as inputs. Gating allows HRNN to automatically learn to reset word/character clock, and hence, learning to split words into subwords as part of a unified architecture.
 
 Deep Neural Networks: How Can We Interpret What They Learned?
-1. Information Encoding by Deep Neural Networks: What Can We Learn?
-2. State Gradients for RNN Memory Analysis
-3. Exploring How Phone Classification Neural Networks Learn Phonetic Information by Visualising and Interpreting Bottleneck Features
-4. Memory Time Span in LSTMs for Multi-Speaker Source Separation
+1. Information Encoding by Deep Neural Networks: What Can We Learn?: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1896.pdf
+Investigates the link between speech DNN representations and phonetic knowledge.
+
+2. State Gradients for RNN Memory Analysis: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1153.pdf
+Looks at LSTM LM state gradients to understand which topics (names, word relationships) are remembered as time passes for different corpora.
+
+3. Exploring How Phone Classification Neural Networks Learn Phonetic Information by Visualising and Interpreting Bottleneck Features: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/2462.pdf
+Graphics to help visualize phone classification performed by BNFs in speech DNNs.
+
+4. Memory Time Span in LSTMs for Multi-Speaker Source Separation: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/2082.pdf
+Studies controlled leakage in LSTMs on MSSS performance.
 
 Recurrent Neural Models for ASR
-1. A GPU-based WFST Decoder with Exact Lattice Generation
-2. Automatic Speech Recognition System Development in the "Wild"
-3. Semantic Lattice Processing in Contextual Automatic Speech Recognition for Google Assistant
-4. Contextual Speech Recognition in End-to-end Neural Network Systems Using Beam Search
+1. A GPU-based WFST Decoder with Exact Lattice Generation: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1339.pdf
+Describes the parallel algorithms for WFST decoding on GPUs.
+
+2. Automatic Speech Recognition System Development in the "Wild": https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1085.pdf
+For domains without specialized resources in low-resource-languages ASR development, confidence scores can be used to develop (or optimize) a system.
+
+3. Semantic Lattice Processing in Contextual Automatic Speech Recognition for Google Assistant: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/2453.pdf
+Tag word lattices with semantic information in form of NER tags to allow detection of song names
+
+4. Contextual Speech Recognition in End-to-end Neural Network Systems Using Beam Search: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/2416.pdf
+Conventional ASR's Rescoring with contextual cues is applied to beam search for Listen, Attend and Spell arch for ASR. 
 
 Zero-resource Speech Recognition
-1. Multilingual Bottleneck Features for Subword Modeling in Zero-resource Languages
-2. Exploiting Speaker and Phonetic Diversity of Mismatched Language Resources for Unsupervised Subword Modeling
+1. Multilingual Bottleneck Features for Subword Modeling in Zero-resource Languages: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/2334.pdf
+Multilingual BNFs are very effective when building ASR systems for zero resource languages.
+
+2. Exploiting Speaker and Phonetic Diversity of Mismatched Language Resources for Unsupervised Subword Modeling: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1081.pdf
+An out-of-domain ASR is used to extract fMLLR features on unsupervised speech dataset and is used to create BNFs that phonetically discriminative and speaker-invariant. The results are competitive with the SOTA.
 
 Neural Network Training Strategies for ASR
-1. An Investigation of Mixup Training Strategies for Acoustic Models in ASR
+1. An Investigation of Mixup Training Strategies for Acoustic Models in ASR: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/2191.pdf
+Mixup helps create virtual training examples and is applied to ASR. Compared to speech perturbation and dropout, which are other such data augmentation and regularization methods, mixup performs best.
 
 Low Resource Speech Recognition Challenge for Indian Languages
-1. BUT System for Low Resource Indian Language ASR
+1. BUT System for Low Resource Indian Language ASR: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1302.pdf
+Describes the best system created for the 2018 low resource speech recognition challenge for Indian languages. It also investigates the use of grammar rules for creating a lexicon for OOV words which are discovered in the eval set.
 
 Language Modeling
-1. Active Memory Networks for Language Modeling
-2. Unsupervised and Efficient Vocabulary Expansion for Recurrent Neural Network Language Models in ASR
-3. Improving Language Modeling with an Adversarial Critic for Automatic Speech Recognition
-4. Training Recurrent Neural Network through Moment Matching for NLP Applications
-5. i-Vectors in Language Modeling: An Efficient Way of Domain Adaptation for Feed-Forward Models
+1. Active Memory Networks for Language Modeling: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/0078.pdf
+Active memory learns topics separately from the word-to-word predictions and combines this information in an attention model.
+
+2. Unsupervised and Efficient Vocabulary Expansion for Recurrent Neural Network Language Models in ASR: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1021.pdf
+Expands the hidden-to-output layer to include OOS words at the time of inference and improve ASR output.
+
+3. Improving Language Modeling with an Adversarial Critic for Automatic Speech Recognition: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1111.pdf
+To mitigate the exposure-bias issue an auxiliary neural critic is used to help LMs learn long-term dependencies. 
+
+4. Training Recurrent Neural Network through Moment Matching for NLP Applications: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1369.pdf
+Mitigates exposure-bias issue using a moment-matching scheme.
+
+5. i-Vectors in Language Modeling: An Efficient Way of Domain Adaptation for Feed-Forward Models: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/1070.pdf
+i-Vector-based sentence representations are combined with LMs to help with domain adaptation in FFNNs.
